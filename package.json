@@ -10,8 +10,16 @@
     "start": "cd server && npm start",
     "heroku-postbuild": "cd client && npm install && npm run build && cd '../server' && npm i"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirsenkoDanIT/cookbook.git"
+  },
   "author": "Oleksii Kyrsenko",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirsenkoDanIT/cookbook/issues"
+  },
+  "homepage": "https://github.com/kirsenkoDanIT/cookbook#readme",
   "dependencies": {
     "concurrently": "^5.0.0"
   }
