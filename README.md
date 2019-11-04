@@ -3,7 +3,7 @@
 ## Used:
 * React
 * Redux
-* Saga
+* Redux Saga
 * Node.js
 * Express
 * Mongoose
