@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-// import cors from "cors";
+import cors from "cors";
 import path from "path";
 import config from "./config";
 import PostRoutes from "./routes/PostRoutes";
@@ -14,13 +14,10 @@ app.use(
 );
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 app.use(PostRoutes);
 
 app.use(express.static(path.join(__dirname, "../client/build")));
-app.use('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '../client/build/index.html'))
-);
 app.use("*", (req, res) =>
   res.sendFile(path.join(__dirname, "../client/build/index.html"))
 );
